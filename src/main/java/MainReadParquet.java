@@ -20,8 +20,7 @@ public class MainReadParquet {
 
     public static void main(String[] args) throws IllegalArgumentException {
         try {
-            MainReadParquet.readFile(args[0],
-                    args[0]);
+            MainReadParquet.readFile(args[0], args[1]);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             System.exit(1);
