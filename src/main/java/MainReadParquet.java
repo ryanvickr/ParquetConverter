@@ -20,8 +20,8 @@ public class MainReadParquet {
 
     public static void main(String[] args) throws IllegalArgumentException {
         try {
-            MainReadParquet.readFile("C:\\Users\\330186297\\Desktop\\SANDBOX\\equity.20171031100614.OUT.parquet",
-                    "C:\\Users\\330186297\\Desktop\\SANDBOX\\srdr_equity_input.psv");
+            MainReadParquet.readFile(args[0],
+                    args[0]);
         } catch (Exception e) {
             System.out.println(e.getMessage());
             System.exit(1);
